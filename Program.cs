@@ -1,12 +1,8 @@
 ﻿using System;
 
-namespace Guessing_Game
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
+Console.WriteLine("Can you guess the secret number?");
+
+string usersGuessToConvert = Console.ReadLine();
+int usersGuess = Convert.ToInt32(usersGuessToConvert);
+
+Console.WriteLine($"You guessed: {usersGuess}");
