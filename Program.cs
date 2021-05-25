@@ -11,7 +11,8 @@ checkUserGuess();
 
 void checkUserGuess()
 {
-    for (int i = 3; i >= 0; i--)
+    int j = 1;
+    for (int i = 3; i >= 0; i--, j++)
     {
         string usersGuessToConvert = Console.ReadLine();
         int usersGuess = Convert.ToInt32(usersGuessToConvert);
@@ -25,6 +26,7 @@ void checkUserGuess()
         {
             Console.WriteLine("Sorry, that is not the right number.");
             Console.WriteLine($"You have {i} chances left.");
+            Console.WriteLine($"Your guess {j}");
         }
     }
 }
