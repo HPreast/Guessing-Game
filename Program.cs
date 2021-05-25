@@ -20,7 +20,10 @@ else if (userDifficulty == "hard")
 {
     numberOfGuesses = 4;
 }
-
+else if (userDifficulty == "cheater")
+{
+    numberOfGuesses = 1000000;
+}
 Console.WriteLine($"Can you guess the secret number in {numberOfGuesses} tries?");
 
 
