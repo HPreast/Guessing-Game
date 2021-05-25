@@ -22,9 +22,17 @@ void checkUserGuess()
             Console.WriteLine("Congrats! You guessed correctly.");
             break;
         }
-        else
+        else if (usersGuess < secretNumber)
         {
-            Console.WriteLine("Sorry, that is not the right number.");
+            Console.WriteLine("Too low, try again!");
+            // Console.WriteLine("Sorry, that is not the right number.");
+            Console.WriteLine($"Your guess {j}");
+            Console.WriteLine($"You have {i} chances left.");
+        }
+        else if (usersGuess > secretNumber)
+        {
+            Console.WriteLine("Too high, try again!");
+            // Console.WriteLine("Sorry, that is not the right number.");
             Console.WriteLine($"Your guess {j}");
             Console.WriteLine($"You have {i} chances left.");
         }
