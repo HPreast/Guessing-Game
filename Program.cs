@@ -1,6 +1,6 @@
 ﻿using System;
 
-int secretNumber = 42;
+int secretNumber = new Random().Next(1, 100);
 
 Console.WriteLine("Can you guess the secret number in 4 tries?");
 // string usersGuessToConvert = Console.ReadLine();
@@ -25,8 +25,8 @@ void checkUserGuess()
         else
         {
             Console.WriteLine("Sorry, that is not the right number.");
-            Console.WriteLine($"You have {i} chances left.");
             Console.WriteLine($"Your guess {j}");
+            Console.WriteLine($"You have {i} chances left.");
         }
     }
 }
